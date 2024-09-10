@@ -8,10 +8,18 @@
     "start": "node src/app.js -p 29980",
     "dev": "nodemon src/app.js -p 80 -dev"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Wany <sung@wanyne.com> (https://wanyne.com)",
   "dependencies": {
     "express": "^4.19.2",
     "node-html-parser": "^6.1.13"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "*"
+    ],
+    "ignore": [
+      "./src/public"
+    ],
+    "ext": "js,mjs,json,html,css"
   }
 }

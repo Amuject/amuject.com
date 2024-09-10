@@ -1,0 +1,73 @@
+/* 
+  NB International Pro
+  https://neubauladen.com/product/nb-international-pro/
+*/
+
+/* 
+  Pretendard Variable
+  https://github.com/orioncactus/pretendard
+*/
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+
+/* 
+  ChosunSm
+  https://noonnu.cc/font_page/418 
+  https://event.chosun.com/100/100font.html 
+*/
+@import url('/resources/fonts/ChosunSm.css');
+
+/* 
+  Shippori Mincho
+  https://fonts.google.com/specimen/Shippori+Mincho
+*/
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&display=swap');
+
+:root {
+  --sans-serif: 'NB International Pro', 'Pretendard Variable',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', 'Android Emoji',
+    'Malgun Gothic', 'Dotum', sans-serif;
+  --serif: 'Times New Roman', 'Shippori Mincho', 'ChosunSm', 'Batang',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', 'Android Emoji',
+    serif;
+  --monospace: 'NB International Pro Mono', 'SF Mono', 'Consolas',
+    'Pretendard Variable', 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Noto Color Emoji', 'Android Emoji', monospace;
+  --font-family: var(--sans-serif);
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 125%;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background: rgb(230, 230, 230);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-weight: 400;
+  margin: 0;
+}
+/*
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 180%;
+  text-align: left;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+*/

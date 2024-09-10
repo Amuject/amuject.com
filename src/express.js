@@ -40,4 +40,9 @@ app.all('*', (req, res) => {
   res.status(404).render('error/404');
 });
 
+app.use((err, req, res, next) => {
+  console.error(err);
+  res.status(404).render('error/404');
+});
+
 export default app;
